@@ -3,10 +3,13 @@ name: Deploy Pages
 on:
   push:
     branches: ["main"]
+  issues:
+    types: [edited]
   workflow_dispatch:
 
 permissions:
   contents: read
+  issues: read
   pages: write
   id-token: write
 
@@ -16,6 +19,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'issues' || github.event.issue.number == 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -23,6 +27,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Sync table from issue 30
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/sync_issue30_table.py --issue 30
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
