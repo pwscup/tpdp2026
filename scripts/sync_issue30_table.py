@@ -10,6 +10,7 @@ import urllib.request
 EXPECTED_HEADERS = [
     "No",
     "文献タイトル",
+    "発表元/掲載先",
     "Issue",
     "文献の状態",
     "コードの状態",
@@ -101,6 +102,7 @@ def row_to_html(row: dict[str, str]) -> str:
     cells = [
         html.escape(row["No"], quote=False),
         html.escape(row["文献タイトル"], quote=False),
+        html.escape(row["発表元/掲載先"], quote=False),
         markdown_links_to_html(row["Issue"]),
         html.escape(row["文献の状態"], quote=False),
         html.escape(row["コードの状態"], quote=False),
