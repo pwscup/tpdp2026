@@ -1,0 +1,182 @@
+【更新概要】
+
+未確認リストを反映し、「未確認チェック」シートを追加。
+対象は以下の2分類。
+
+1. 文献未確認
+2. コード未確認
+
+各項目について、再確認結果、URL/根拠、対応方針を整理。
+現時点で独立したarXiv、PDF、preprint、公式コードが確認できないものは「未確認」として明示。
+TPDP2026掲載情報で確認できるものは、発表ページを根拠として残す。
+
+【文献未確認：再確認結果】
+
+#2 Understanding Private Evolution as Learning-Augmented Clustering
+再確認結果：
+独立したarXiv / PDF / preprintは未確認。
+ただし、TPDP2026の発表ページ、およびFelix Zhou氏のPublicationページでTPDP2026 Invited Talkとして確認可能。
+
+URL/根拠：
+https://tpdp.journalprivacyconfidentiality.org/2026/
+https://felix-zhou.com/
+
+対応方針：
+文献URL欄は「未確認」とし、発表ページを参照先として記載。
+資料上は「文献」ではなく「TPDP2026発表情報」として扱うのが安全。
+
+#9 Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation
+再確認結果：
+独立したarXiv / PDF / preprintは未確認。
+TPDP2026掲載情報としては確認可能。
+
+URL/根拠：
+https://tpdp.journalprivacyconfidentiality.org/2026/
+
+対応方針：
+文献URL欄は「未確認」。
+発表ページを根拠として残す。
+
+#14 ACME: Approximate Chebyshev Moment Estimation for Differentially Private Synthetic Data
+再確認結果：
+同名のACME論文は未確認。
+ただし、関連するChebyshev moment matching系の文献候補は確認可能。
+
+関連文献候補：
+Private Distribution Learning with Public Data: The View from Sample Compression
+https://arxiv.org/pdf/2408.12385
+
+URL/根拠：
+https://tpdp.journalprivacyconfidentiality.org/2026/
+
+対応方針：
+文献URL欄は「未確認」。
+関連文献候補は参考情報として扱い、ACMEそのものの文献とは明確に区別する。
+
+#17 PRIME: A Modular Approach for Private Synthetic Data
+再確認結果：
+独立したarXiv / PDF / preprintは未確認。
+TPDP2026掲載情報としては確認可能。
+
+URL/根拠：
+https://tpdp.journalprivacyconfidentiality.org/2026/
+
+対応方針：
+文献URL欄は「未確認」。
+発表ページを根拠として残す。
+
+#19 Better Marginal Measurement via Residual Decomposition
+再確認結果：
+独立したarXiv / PDF / preprintは未確認。
+TPDP2026掲載情報としては確認可能。
+
+URL/根拠：
+https://tpdp.journalprivacyconfidentiality.org/2026/
+
+対応方針：
+文献URL欄は「未確認」。
+発表ページを根拠として残す。
+
+#20 Membership Inference Attack on Tabular Data
+再確認結果：
+独立したarXiv / PDF / preprintは未確認。
+TPDP2026掲載情報としては確認可能。
+
+URL/根拠：
+https://tpdp.journalprivacyconfidentiality.org/2026/
+
+対応方針：
+文献URL欄は「未確認」。
+発表ページを根拠として残す。
+
+【コード未確認：再確認結果】
+
+#2 Understanding Private Evolution as Learning-Augmented Clustering
+公式コード未確認。
+
+#4 Privately Fine-Tuned LLMs Preserve Temporal Dynamics in Tabular Data
+公式コード未確認。
+
+#7 Efficient Distributed Differentially Private Synthetic Data with High Utility via Secure Aggregation
+公式コード未確認。
+論文内でPrivate-PGM等の関連実装への参照はあるが、当該研究そのものの公式コードとは扱わない。
+
+#8 MAPLE: Metadata Augmented Private Language Evolution
+公式コード未確認。
+
+#9 Optimal Domain-Aware Privacy Mechanisms for Synthetic Data Generation
+公式コード未確認。
+
+#10 Phantoms and Disclosures: a Causal Framework for Auditing Synthetic Data
+公式コード未確認。
+
+#11 Fast-MWEM: Private Data Release in Sublinear Time
+公式コード未確認。
+
+#12 Weighted Fourier Factorizations
+公式コード未確認。
+
+#14 ACME
+公式コード未確認。
+
+#15 Differentially Private Language Generation in the Limit
+公式コード未確認。
+
+#17 PRIME
+公式コード未確認。
+
+#19 Better Marginal Measurement via Residual Decomposition
+公式コード未確認。
+
+#20 Membership Inference Attack on Tabular Data
+公式コード未確認。
+
+#21 Differentially Private Multimodal In-Context Learning
+公式コード未確認。
+
+#23 Blameless Users in a Clean Room
+公式コード未確認。
+
+#24 A Unified Framework for Adversary-Aware Differential Privacy Bounds
+公式コード未確認。
+
+#26 Reconciling Differentially Private Medical Data and Model Sharing with Data Protection
+公式コード未確認。
+
+#27 GEM+
+公式コード未確認。
+
+#28 Private Adaptive Covariance Estimation via Gaussian Graphical Models
+公式コード未確認。
+
+#29 On the Curse of Dimensionality in Private Sparse Covariance Estimation and PCA
+公式コード未確認。
+
+【既にコード確認済みとして扱ったもの】
+
+#1 Private Federated Learning using Preference-Optimized Synthetic Data / POPri
+コード：
+https://github.com/meiyuw/POPri
+
+#16 Differentially Private Linear Regression and Synthetic Data Generation with Statistical Guarantees
+コード：
+https://github.com/Shuronglin/BinAgg
+
+#18 Tight Auditing of Differential Privacy in MST and AIM
+コード：
+https://github.com/sassoftware/dpmm
+
+#22 ACTG-ARL: Differentially Private Conditional Text Generation with RL-Boosted Control
+コード：
+https://github.com/actg-arl/ACTG-ARL
+
+【反映上の注意】
+
+・「文献未確認」は、発表自体が存在しないという意味ではない。
+　TPDP2026掲載情報は確認できるが、独立した論文URLが未確認という意味。
+
+・「コード未確認」は、関連実装や依存ライブラリが存在しないという意味ではない。
+　当該研究の公式実装として明示できるコードURLが未確認という意味。
+
+・#14 ACMEについては、関連するChebyshev moment matching文献候補はあるが、
+　ACMEそのものの文献としては扱わない。
