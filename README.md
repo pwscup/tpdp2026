@@ -1,6 +1,6 @@
 # DP-SDG論文調査(TPDP/ICML/AISTATS/etc...)
 
-TPDP2026で委員会がピックアップした29件の論文・発表について、元の発表・掲載先も含めて個別調査を進めるためのリポジトリです。
+DP-SDG（Differentially Private Synthetic Data Generation）に関連する論文・発表を、TPDP/ICML/AISTATS等の発表元・掲載先とあわせて整理するためのリポジトリです。
 
 ## 構成
 
